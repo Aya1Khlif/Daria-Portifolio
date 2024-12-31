@@ -1,0 +1,20 @@
+.banner {
+    background-color: #E9E0DB;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .img img {
+    width: 100%;
+  }
+  
+  .bg {
+    background-color: #91BE3F;
+  }
+  
