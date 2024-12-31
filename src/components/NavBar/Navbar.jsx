@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,23 +19,43 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="bg-white shadow-md sticky top-0 z-50 ">
+      <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <h1 className="text-2xl font-bold text-green-800">Daría Snigur</h1>
 
           <nav className="hidden sm:flex space-x-8 text-center">
-            <a href="#home" className="font-bold text-green-900 hover:text-green-600">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="font-bold text-green-900 hover:text-green-600"
+            >
               Home
-            </a>
-            <a href="#about" className="font-bold text-green-900 hover:text-green-600">
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="font-bold text-green-900 hover:text-green-600"
+            >
               About
-            </a>
-            <a href="#training" className="font-bold text-green-900 hover:text-green-600">
-              Training
-            </a>
-            <a href="#contact" className="font-bold text-green-900 hover:text-green-600">
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              className="font-bold text-green-900 hover:text-green-600"
+            >
+              Portfolio
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="font-bold text-green-900 hover:text-green-600"
+            >
               Contact
-            </a>
+            </Link>
           </nav>
 
           {!menuOpen && (
@@ -90,34 +111,42 @@ export default function Navbar() {
             </button>
 
             <nav className="flex flex-col items-center space-y-12 mb-16 sm:mb-0">
-              <a
-                href="#home"
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
                 className="text-gray-700 hover:text-green-600 text-xl"
                 onClick={() => setMenuOpen(false)}
               >
                 Home
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
                 className="text-gray-700 hover:text-green-600 text-xl"
                 onClick={() => setMenuOpen(false)}
               >
                 About
-              </a>
-              <a
-                href="#portfolio"
+              </Link>
+              <Link
+                to="training"
+                smooth={true}
+                duration={500}
                 className="text-gray-700 hover:text-green-600 text-xl"
                 onClick={() => setMenuOpen(false)}
               >
-                Portfolio
-              </a>
-              <a
-                href="#contact"
+                Training
+              </Link>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
                 className="text-gray-700 hover:text-green-600 text-xl"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}
