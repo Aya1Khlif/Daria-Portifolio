@@ -14,7 +14,7 @@ const Banner = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className=" sm:text-5xl lg:text-4xl w-full font-bold text-green-700 bg-gradient-to-br from-green-700 via-yellow-500 to-orange-500 bg-clip-text text-transparent"
+            className=" text-4xl w-full font-bold mt-7 text-green-700 bg-gradient-to-br from-green-700 via-yellow-500 to-orange-500 bg-clip-text text-transparent"
           >
             Welcome to Daria Snigur's Portfolio
           </motion.h1>
@@ -75,7 +75,7 @@ const Banner = () => {
           <img
             src={daria}
             alt="Daria Snigur"
-            className="absolute z-10 w-[50%] h-full object-cover rounded-full md:hidden"
+            className="absolute z-10 w-[50%] h-[50%] object-cover rounded-full md:hidden"
             style={{
               left: "20%",
               top: "10%",
