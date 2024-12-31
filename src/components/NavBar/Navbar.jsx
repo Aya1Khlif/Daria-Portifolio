@@ -1,6 +1,6 @@
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-scroll"; 
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +28,7 @@ export default function Navbar() {
               to="home"
               smooth={true}
               duration={500}
-              className="font-bold text-green-900 hover:text-green-600"
+              className="font-bold text-green-900 hover:text-green-600 cursor-pointer"
             >
               Home
             </Link>
@@ -36,23 +36,23 @@ export default function Navbar() {
               to="about"
               smooth={true}
               duration={500}
-              className="font-bold text-green-900 hover:text-green-600"
+              className="font-bold text-green-900 hover:text-green-600 cursor-pointer"
             >
               About
             </Link>
             <Link
-              to="portfolio"
+              to="training"
               smooth={true}
               duration={500}
-              className="font-bold text-green-900 hover:text-green-600"
+              className="font-bold text-green-900 hover:text-green-600 cursor-pointer"
             >
-              Portfolio
+              Training
             </Link>
             <Link
               to="contact"
               smooth={true}
               duration={500}
-              className="font-bold text-green-900 hover:text-green-600"
+              className="font-bold text-green-900 hover:text-green-600 cursor-pointer"
             >
               Contact
             </Link>
@@ -115,7 +115,7 @@ export default function Navbar() {
                 to="home"
                 smooth={true}
                 duration={500}
-                className="text-gray-700 hover:text-green-600 text-xl"
+                className="text-gray-700 hover:text-green-600 text-xl cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Home
@@ -124,25 +124,25 @@ export default function Navbar() {
                 to="about"
                 smooth={true}
                 duration={500}
-                className="text-gray-700 hover:text-green-600 text-xl"
+                className="text-gray-700 hover:text-green-600 text-xl cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 About
               </Link>
               <Link
-                to="training"
+                to="portfolio"
                 smooth={true}
                 duration={500}
-                className="text-gray-700 hover:text-green-600 text-xl"
+                className="text-gray-700 hover:text-green-600 text-xl cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
-                Training
+                Portfolio
               </Link>
               <Link
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="text-gray-700 hover:text-green-600 text-xl"
+                className="text-gray-700 hover:text-green-600 text-xl cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact
