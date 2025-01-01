@@ -130,13 +130,13 @@ export default function Navbar() {
                 About
               </Link>
               <Link
-                to="portfolio"
+                to="training"
                 smooth={true}
                 duration={500}
                 className="text-gray-700 hover:text-green-600 text-xl cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
-                Portfolio
+                Training
               </Link>
               <Link
                 to="contact"
